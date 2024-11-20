@@ -11,8 +11,8 @@ const Navbar = () => {
             <h1 className="flex items-center gap-4">
                 <ApplicationLogo href="/" />
                 <div className="flex flex-col text-2xl font-bold">
-                    <span className=" text-primary">KAZUSCARA</span>
-                    <span className="">STORE. </span>
+                    <span className=" text-primary">ScaraPlay</span>
+                    {/* <span className="">ID. </span> */}
                 </div>
             </h1>
             <div className="flex items-center gap-10">

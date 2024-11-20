@@ -55,7 +55,7 @@ export default function Login({
                 <h1 className="text-xl font-bold">Login</h1>
                 <p className="text-sm">
                     Masukkan alamat email dan password Anda yang sesuai dan
-                    sudah di daftarkan di The Kost
+                    sudah di daftarkan di ScaraPlay
                 </p>
             </div>
             {status && (

@@ -15,8 +15,8 @@ export default function Dashboard({ topupGame }: DashboardProps) {
         <>
             <Tabs defaultValue="table" className="w-full">
                 <TabsList>
-                    <TabsTrigger value="table">Data Top Up</TabsTrigger>
-                    <TabsTrigger value="add">Tambah Top Up</TabsTrigger>
+                    <TabsTrigger value="table">Data Penjualan</TabsTrigger>
+                    <TabsTrigger value="add">Tambah Data Penjualan</TabsTrigger>
                 </TabsList>
                 <TabsContent value="table">
                     <DataTableCustom data={topupGame} columns={column} />
@@ -31,8 +31,8 @@ export default function Dashboard({ topupGame }: DashboardProps) {
 
 Dashboard.layout = (page: React.ReactNode) => (
     <AdminLayout
-        tittle="Manajemen Top Up"
-        description="Top Up Product Control Panel"
+        tittle="Manajemen Penjualan Kostum"
+        description="Costume Product Control Panel"
         head="admin"
         children={page}
     />

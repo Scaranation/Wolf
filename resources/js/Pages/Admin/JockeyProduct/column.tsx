@@ -40,7 +40,7 @@ export const column: ColumnDef<JockeyProduct>[] = [
                         column.toggleSorting(column.getIsSorted() === "asc")
                     }
                 >
-                    Nama Game
+                    Nama Kostum
                     <ArrowUpDown className="ml-2 h-4 w-4" />
                 </Button>
             );
@@ -71,7 +71,7 @@ export const column: ColumnDef<JockeyProduct>[] = [
                         column.toggleSorting(column.getIsSorted() === "asc")
                     }
                 >
-                    Nama Top up
+                    Size
                     <ArrowUpDown className="ml-2 h-4 w-4" />
                 </Button>
             );

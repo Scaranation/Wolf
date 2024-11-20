@@ -11,12 +11,11 @@ const Footer = () => {
                             <div className="mb-10 w-full">
                                 <Link href="/" className="mb-6 inline-block ">
                                     <span className="text-3xl font-semibold">
-                                        KAZUSCARA STORE
+                                        ScaraPlay
                                     </span>
                                 </Link>
                                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
-                                    Top up game favorit Anda dengan mudah dan
-                                    cepat.
+                                Dapatkan kostum cosplay favorit Anda dengan mudah dan cepat.
                                 </p>
                                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                                     <span className="mr-3 text-primary">
@@ -119,7 +118,7 @@ const Footer = () => {
                                     </a>
                                 </div>
                                 <p className="text-base text-body-color dark:text-dark-6">
-                                    &copy; 2024 KAZUSCARA STORE. All rights reserved.
+                                    &copy; 2024 ScaraPlay. All rights reserved.
                                 </p>
                             </div>
                         </div>

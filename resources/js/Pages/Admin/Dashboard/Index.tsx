@@ -25,7 +25,7 @@ export default function Dashboard({
                     <div className="flex flex-col w-full mt-1 gap-1">
                         <span className="text-xl font-bold">{games}</span>
                         <span className="text-sm font-semibold text-gray-500">
-                            Total Game
+                            Total Produk Kostum
                         </span>
                         <div className="justify-end text-blue-500 flex w-full mt-8">
                             <Link
@@ -48,7 +48,7 @@ export default function Dashboard({
                             {topupProduct}
                         </span>
                         <span className="text-sm font-semibold text-gray-500">
-                            Total Toptup
+                            Total Kostum
                         </span>
                         <div className="justify-end text-blue-500 flex w-full mt-8">
                             <Link
@@ -71,7 +71,7 @@ export default function Dashboard({
                             {jockeyProduct}
                         </span>
                         <span className="text-sm font-semibold text-gray-500">
-                            Total Joki
+                            Total Kostum Pre-Order
                         </span>
                         <div className="justify-end text-blue-500 flex w-full mt-8">
                             <Link

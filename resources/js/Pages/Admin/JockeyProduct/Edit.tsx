@@ -80,7 +80,7 @@ const Edit = ({ joki }: EditProps) => {
                 <DialogContent className=" z-[120] sm:max-w-[1000px] h-auto rounded-lg overflow-auto bg-background">
                     <DialogHeader>
                         <DialogTitle className="py-3 text-xl">
-                            Update data Joki
+                            Update data Kostum Pre-Order
                         </DialogTitle>
                     </DialogHeader>
                     <div className="mt-2">
@@ -96,7 +96,7 @@ const Edit = ({ joki }: EditProps) => {
                                     <div className="flex flex-col gap-4">
                                         <div className="flex flex-col gap-3">
                                             <Label htmlFor="product_name">
-                                                Nama joki
+                                                Size
                                             </Label>
                                             <Input
                                                 type="text"
@@ -117,9 +117,9 @@ const Edit = ({ joki }: EditProps) => {
                                             />
                                         </div>{" "}
                                         <SelectOptionCustom
-                                            optionName="Pilih Game"
+                                            optionName="Pilih Kostum Pre-Order"
                                             htmlFor="game_id"
-                                            labelName="Game"
+                                            labelName="Kostum"
                                             optionMap={games.map(
                                                 (item, index) => {
                                                     return (

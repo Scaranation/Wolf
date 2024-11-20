@@ -32,19 +32,19 @@ const SidebarAdmin = () => {
                     <SidebarItem
                         href={route("admin.game.index")}
                         icon={Gamepad2}
-                        label="Game"
+                        label="Kostum"
                         isActive={variantUrl === "/admin/game"}
                     />{" "}
                     <SidebarItem
                         href={route("admin.topup-game.index")}
                         icon={Notebook}
-                        label="Topup Game"
+                        label="Penjualan"
                         isActive={variantUrl === "/admin/TopupProduct"}
                     />{" "}
                     <SidebarItem
                         href={route("admin.jasa-joki.index")}
                         icon={NotepadText}
-                        label="Joki"
+                        label="Pre-Order"
                         isActive={variantUrl === "/admin/JockeyProduct"}
                     />{" "}
                     {/* <SidebarItem
@@ -133,7 +133,7 @@ const SidebarAdmin = () => {
                 </ul>
                 <div className="mb-5 flex flex-col justify-center items-center">
                     <span className="text-xs font-semibold">
-                        © 2024 - KAZUSCARA STORE
+                        © 2024 - SCARAPLAY
                     </span>
                     <span className="text-xs text-zinc-600">
                         All rights reserved

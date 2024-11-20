@@ -44,7 +44,7 @@ const Create: React.FC = () => {
                 <div className="grid grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col gap-3">
-                            <Label htmlFor="product_name">Nama Top up</Label>
+                            <Label htmlFor="product_name">Size</Label>
                             <Input
                                 type="text"
                                 placeholder="Point/Koin"
@@ -59,9 +59,9 @@ const Create: React.FC = () => {
                             <InputError message={errors.product_name} />
                         </div>
                         <SelectOptionCustom
-                            optionName="Pilih Game"
+                            optionName="Pilih Kostum"
                             htmlFor="game_id"
-                            labelName="Game"
+                            labelName="Kostum"
                             optionMap={games.map((item, index) => {
                                 return (
                                     <option value={item.id} key={index}>

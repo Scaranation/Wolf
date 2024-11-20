@@ -48,7 +48,7 @@ const Create: React.FC = () => {
                 <div className="grid grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col gap-3">
-                            <Label htmlFor="name">Nama Game</Label>
+                            <Label htmlFor="name">Nama Kostum</Label>
                             <Input
                                 type="text"
                                 placeholder="Valorant"

@@ -31,7 +31,7 @@ export const column: ColumnDef<Game>[] = [
     },
     {
         accessorKey: "image",
-        header: "Gambar Game",
+        header: "Gambar Kostum",
         cell(props) {
             return (
                 <img
@@ -53,7 +53,7 @@ export const column: ColumnDef<Game>[] = [
                         column.toggleSorting(column.getIsSorted() === "asc")
                     }
                 >
-                    Nama Game
+                    Nama Kostum
                     <ArrowUpDown className="ml-2 h-4 w-4" />
                 </Button>
             );

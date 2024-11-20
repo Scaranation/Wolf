@@ -13,14 +13,10 @@ export default function AuthLayout({ children }: PropsWithChildren) {
                     <div className="w-full sm:max-w-md flex justify-between flex-col">
                         <div className="flex flex-col gap-2">
                             <h1 className="text-4xl text-white font-extrabold">
-                                SCARA STORE
+                                Scara Play
                             </h1>
                             <h2 className="text-zinc-300 text-base font-medium">
-                                Apakah Anda mencari tempat untuk meningkatkan
-                                pengalaman gaming Anda? Selamat datang di
-                                'Gaming Hub', platform terbaik untuk top up game
-                                dan jasa joki profesional yang siap memenuhi
-                                semua kebutuhan gaming Anda!
+                            Apakah Anda mencari tempat untuk mewujudkan penampilan cosplay impian Anda? Selamat datang di 'Cosplay Hub', platform terbaik untuk kostum berkualitas dan aksesori cosplay yang siap memenuhi semua kebutuhan Anda!
                             </h2>
                         </div>
                     </div>

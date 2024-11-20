@@ -42,7 +42,7 @@ const Welcome = ({ games }: Props) => {
                 </div>
 
                 <div className="mt-10">
-                    <p className="text-4xl font-bold">Top Up</p>
+                    <p className="text-4xl font-bold">Kostum</p>
                     <hr className="my-4" />
                     <ul className="mt-4 space-y-2 ">
                         {games.topup_products.map((topup) => (
@@ -57,14 +57,14 @@ const Welcome = ({ games }: Props) => {
                                     <p>
                                         <FormatRupiah value={topup.price} />
                                     </p>
-                                    <Button>Top up !</Button>
+                                    <Button>Pesan Sekarang !</Button>
                                 </div>
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="mt-10">
-                    <p className="text-4xl font-bold">Joki </p>
+                    <p className="text-4xl font-bold">Kostum (Pre-Order) </p>
                     <hr className="my-4" />
                     <ul className="mt-4 space-y-2 ">
                         {games.jockey_products.map((topup) => (
@@ -79,7 +79,7 @@ const Welcome = ({ games }: Props) => {
                                     <p>
                                         <FormatRupiah value={topup.price} />
                                     </p>
-                                    <Button>Joki Sekarang !</Button>
+                                    <Button>Pre-Order</Button>
                                 </div>
                             </li>
                         ))}

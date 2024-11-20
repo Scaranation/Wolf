@@ -16,8 +16,8 @@ export default function Dashboard({ jockeyProducts }: DashboardProps) {
         <>
             <Tabs defaultValue="table" className="w-full">
                 <TabsList>
-                    <TabsTrigger value="table">Data Joki</TabsTrigger>
-                    <TabsTrigger value="add">Tambah Joki</TabsTrigger>
+                    <TabsTrigger value="table">Data Kostum Pre-Order</TabsTrigger>
+                    <TabsTrigger value="add">Tambah Kostum Pre-Order</TabsTrigger>
                 </TabsList>
                 <TabsContent value="table">
                     <DataTableCustom data={jockeyProducts} columns={column} />
@@ -32,8 +32,8 @@ export default function Dashboard({ jockeyProducts }: DashboardProps) {
 
 Dashboard.layout = (page: React.ReactNode) => (
     <AdminLayout
-        tittle="Manajemen Joki"
-        description="Joki Product Control Panel"
+        tittle="Manajemen Kostum Pre-Order"
+        description="Costume Pre-Order Product Control Panel"
         head="joki"
         children={page}
     />
