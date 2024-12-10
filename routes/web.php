@@ -42,5 +42,10 @@ Route::prefix('admin')->middleware(['auth', "role:admin", 'verified'])->group(fu
     Route::resource('topup-game', TopupProductController::class)->names('admin.topup-game');
 });
 
+Route::get('/map', function () {
+    return view('map');
+});
+
+
 
 require __DIR__ . '/auth.php';

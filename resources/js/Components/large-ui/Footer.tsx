@@ -57,7 +57,8 @@ const Footer = () => {
                                 </p>
                                 <div className="mt-3">
                                     <p>
-                                        <a href="#">coba</a>
+                                        ScaraPlay : Jl.Manggis, 
+                                        <a href="map"> Maps </a>
                                     </p>
                                 </div>
                             </div>
