@@ -55,6 +55,11 @@ const Footer = () => {
                                         +62822-1751-3441
                                     </a>
                                 </p>
+                                <div className="mt-3">
+                                    <p>
+                                        <a href="#">coba</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 

@@ -17,12 +17,11 @@ const Welcome = (props: Props) => {
                         <div className="mx-auto mb-12 w-full max-w-3xl md:mb-16 lg:mb-20">
                             <h1 className="mb-4 text-4xl font-bold md:text-6xl">
                                 Situs Pembelian Kostum Cosplay Tanpa{" "}
-                                <span className="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white">
+                            </h1>
+                                <span className="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-10 py-2 font-bold text-5xl text-white">
                                     Ribet
                                 </span>
-                                .
-                            </h1>
-                            <p className="mx-auto mb-5  text-xl text-[#636262] lg:mb-8">
+                            <p className="mx-auto mt-2 mb-5  text-xl text-[#636262] lg:mb-8">
                             Dapatkan kostum cosplay favorit Anda dengan mudah dan cepat.  
                             Nikmati penawaran terbaik dan harga terjangkau hanya di sini!
                             </p>
