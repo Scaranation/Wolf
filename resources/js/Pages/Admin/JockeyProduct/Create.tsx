@@ -47,7 +47,7 @@ const Create: React.FC = () => {
                             <Label htmlFor="product_name">Size</Label>
                             <Input
                                 type="text"
-                                placeholder="Point/Koin"
+                                placeholder="M/L/XL"
                                 id="product_name"
                                 name="product_name"
                                 value={data.product_name}
@@ -85,7 +85,7 @@ const Create: React.FC = () => {
                             <Label htmlFor="details">Detail</Label>
                             <Input
                                 type="text"
-                                placeholder="Top up Rp 10.000"
+                                placeholder="Full Set"
                                 id="details"
                                 name="details"
                                 value={data.details}
@@ -100,7 +100,7 @@ const Create: React.FC = () => {
                             <Label htmlFor="price">Harga</Label>
                             <Input
                                 type="number"
-                                placeholder="Rp 10.000"
+                                placeholder="Rp 150.000"
                                 id="price"
                                 name="price"
                                 value={data.price}

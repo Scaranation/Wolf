@@ -56,9 +56,19 @@ const Footer = () => {
                                     </a>
                                 </p>
                                 <div className="mt-3">
-                                    <p>
-                                        ScaraPlay : Jl.Manggis, 
-                                        <a href="map"> Maps </a>
+                                    <p className="flex items-center gap-2">
+                                        ScaraPlay : Jl.Manggis
+                                        <a 
+                                        href="map"
+                                        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                                        ><svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="white"
+                                    >
+                                        <path d="M12 2C8.13 2 5 5.13 5 8.5C5 10.92 6.77 13.29 9.61 15.61L12 18.21L14.39 15.61C17.23 13.29 19 10.92 19 8.5C19 5.13 15.87 2 12 2ZM12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12Z"/>
+                                    </svg></a>
                                     </p>
                                 </div>
                             </div>

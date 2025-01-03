@@ -53,7 +53,7 @@ class GameController extends Controller
             'image' => $path
         ]);
 
-        return back()->with('success', 'Game created successfully');
+        return back()->with('success', 'Costume created successfully');
     }
 
     /**
@@ -103,9 +103,9 @@ class GameController extends Controller
                 $game->update(['image' => $path]);
             }
 
-            return redirect()->route('admin.game.index')->with('success', 'Data Game berhasil diperbarui.');
+            return redirect()->route('admin.game.index')->with('success', 'Data Kostum berhasil diperbarui.');
         } else {
-            return redirect()->route('admin.game.index')->with('error', 'Data Game gagal diperbarui.');
+            return redirect()->route('admin.game.index')->with('error', 'Data Kostum gagal diperbarui.');
         }
     }
 
@@ -121,9 +121,9 @@ class GameController extends Controller
             //     Storage::disk('public')->delete($game->image);
             // }
             $game->delete();
-            return back()->with('success', 'Game deleted successfully');
+            return back()->with('success', 'Costume deleted successfully');
         } else {
-            return back()->with('error', 'Game not found');
+            return back()->with('error', 'Costume not found');
         }
     }
 }

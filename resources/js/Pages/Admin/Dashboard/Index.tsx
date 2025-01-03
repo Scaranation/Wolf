@@ -2,7 +2,7 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
 import { PageProps } from "@/types";
 import AdminLayout from "@/Layouts/AdminLayout";
-import { ChevronRight, GamepadIcon } from "lucide-react";
+import { ChevronRight, GamepadIcon, Shirt, } from "lucide-react";
 
 interface Props {
     games: number;
@@ -18,7 +18,7 @@ export default function Dashboard({
         <>
             <div className="grid gap-3 mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div className="w-full flex gap-3 bg-white shadow-[0px_1px_3px_0px_rgba(0,_0,_0,_0.22)] rounded-md p-4">
-                    <GamepadIcon
+                    <Shirt
                         size={36}
                         className="p-2 w-10 text-white bg-blue-400 rounded-xl"
                     />
@@ -39,7 +39,7 @@ export default function Dashboard({
                     </div>
                 </div>{" "}
                 <div className="w-full flex gap-3 bg-white shadow-[0px_1px_3px_0px_rgba(0,_0,_0,_0.22)] rounded-md p-4">
-                    <GamepadIcon
+                    <Shirt
                         size={36}
                         className="p-2 w-10 text-white bg-blue-400 rounded-xl"
                     />
@@ -62,7 +62,7 @@ export default function Dashboard({
                     </div>
                 </div>{" "}
                 <div className="w-full flex gap-3 bg-white shadow-[0px_1px_3px_0px_rgba(0,_0,_0,_0.22)] rounded-md p-4">
-                    <GamepadIcon
+                    <Shirt
                         size={36}
                         className="p-2 w-10 text-white bg-blue-400 rounded-xl"
                     />

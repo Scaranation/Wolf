@@ -79,7 +79,7 @@ const Welcome = ({ games }: Props) => {
                                     <p>
                                         <FormatRupiah value={topup.price} />
                                     </p>
-                                    <Button>Pre-Order</Button>
+                                    <Button>Pre-Order !</Button>
                                 </div>
                             </li>
                         ))}

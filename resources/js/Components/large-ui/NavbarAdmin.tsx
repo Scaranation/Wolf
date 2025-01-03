@@ -19,6 +19,7 @@ import {
     User,
     UserCog2Icon,
     Users,
+    UserRoundCog,
 } from "lucide-react";
 
 import {
@@ -48,7 +49,7 @@ const NavbarAdmin = () => {
         <nav className="w-full bg-background flex px-4 justify-between py-3 lg:px-10 items-center z-10 top-0 fixed">
             <ApplicationLogo
                 href="/admin/dashboard"
-                className="w-16 lg:ml-10 hidden lg:block"
+                className="w-20 lg:ml-5 hidden lg:block"
             />
             <div className="flex items-center gap-3 lg:hidden">
                 <Sheet>
@@ -162,9 +163,10 @@ const NavbarAdmin = () => {
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <div className=" items-center gap-3  cursor-pointer flex">
-                        <UserCog2Icon
-                            className="p-2 border rounded-full bg-brandy-rose-500 text-white"
+                        <UserRoundCog
+                            className="p-1 border rounded-full bg-brandy-rose-500 text-white"
                             size={44}
+                            color="black"
                         />
                         <div className=" flex-col w-auto hidden md:flex">
                             <span className=" text-sm font-semibold  text-black">
@@ -181,7 +183,7 @@ const NavbarAdmin = () => {
                             height={24}
                             viewBox="0 0 24 24"
                         >
-                            <path
+                            <path 
                                 fill="none"
                                 stroke="currentColor"
                                 strokeLinecap="round"

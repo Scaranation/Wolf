@@ -49,7 +49,7 @@ class JockeyProductController extends Controller
             'game_id' => $request->game_id
         ]);
 
-        return back()->with('success', 'Jockey created successfully');
+        return back()->with('success', 'Sale created successfully');
     }
 
     /**
@@ -89,9 +89,9 @@ class JockeyProductController extends Controller
                 'details' => $request->details,
                 'game_id' => $request->game_id
             ]);
-            return back()->with('success', 'Jockey  updated successfully');
+            return back()->with('success', 'Sale updated successfully');
         } else {
-            return back()->with('error', 'Jockey  not found');
+            return back()->with('error', 'Sale  not found');
         }
     }
 
@@ -104,9 +104,9 @@ class JockeyProductController extends Controller
 
         if ($jockey) {
             $jockey->delete();
-            return back()->with('success', 'Jockey deleted successfully');
+            return back()->with('success', 'Sale deleted successfully');
         } else {
-            return back()->with('error', 'Jockey not found');
+            return back()->with('error', 'Sale not found');
         }
     }
 }

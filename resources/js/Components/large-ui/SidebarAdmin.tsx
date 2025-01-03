@@ -14,6 +14,9 @@ import {
     PencilRuler,
     Users,
     Users2Icon,
+    Shirt,
+    Store,
+    CalendarClock,
 } from "lucide-react";
 import SidebarItem from "../SidebarItem";
 
@@ -31,19 +34,19 @@ const SidebarAdmin = () => {
                     />{" "}
                     <SidebarItem
                         href={route("admin.game.index")}
-                        icon={Gamepad2}
+                        icon={Shirt}
                         label="Kostum"
                         isActive={variantUrl === "/admin/game"}
                     />{" "}
                     <SidebarItem
                         href={route("admin.topup-game.index")}
-                        icon={Notebook}
+                        icon={Store}
                         label="Penjualan"
                         isActive={variantUrl === "/admin/TopupProduct"}
                     />{" "}
                     <SidebarItem
                         href={route("admin.jasa-joki.index")}
-                        icon={NotepadText}
+                        icon={CalendarClock}
                         label="Pre-Order"
                         isActive={variantUrl === "/admin/JockeyProduct"}
                     />{" "}

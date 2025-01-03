@@ -110,7 +110,7 @@ const Edit = ({ game }: EditProps) => {
                                             </Label>
                                             <Input
                                                 type="text"
-                                                placeholder="Valorant"
+                                                placeholder="Kazuha Costume"
                                                 id="name"
                                                 name="name"
                                                 value={data.name}
@@ -130,7 +130,7 @@ const Edit = ({ game }: EditProps) => {
                                             </Label>
                                             <Input
                                                 type="text"
-                                                placeholder="game ini adalah ..."
+                                                placeholder="kostum ini adalah sebuah kostum yang ..."
                                                 id="description"
                                                 name="description"
                                                 value={data.description}

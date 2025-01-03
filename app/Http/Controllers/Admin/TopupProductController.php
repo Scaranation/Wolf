@@ -49,7 +49,7 @@ class TopupProductController extends Controller
             'game_id' => $request->game_id
         ]);
 
-        return back()->with('success', 'Topup product created successfully');
+        return back()->with('success', 'Pre-order created successfully');
     }
 
     /**
@@ -89,9 +89,9 @@ class TopupProductController extends Controller
                 'details' => $request->details,
                 'game_id' => $request->game_id
             ]);
-            return back()->with('success', 'Topup product updated successfully');
+            return back()->with('success', 'Pre-order updated successfully');
         } else {
-            return back()->with('error', 'Topup product not found');
+            return back()->with('error', 'Pre-order not found');
         }
     }
 
@@ -104,9 +104,9 @@ class TopupProductController extends Controller
 
         if ($topupProduct) {
             $topupProduct->delete();
-            return back()->with('success', 'Topup product deleted successfully');
+            return back()->with('success', 'Pre-order deleted successfully');
         } else {
-            return back()->with('error', 'Topup product not found');
+            return back()->with('error', 'Pre-order not found');
         }
     }
 }

@@ -31,8 +31,8 @@ export default function Dashboard({ games }: DashboardProps) {
 
 Dashboard.layout = (page: React.ReactNode) => (
     <AdminLayout
-        tittle="Manajemen Game"
-        description="Game Admin Control Panel"
+        tittle="Manajemen Kostum"
+        description="Kostum Admin Control Panel"
         head="admin"
         children={page}
     />
