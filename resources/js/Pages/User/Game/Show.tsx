@@ -7,10 +7,17 @@ import { Link } from "@inertiajs/react";
 import { Bolt, Globe, Headset, Zap } from "lucide-react";
 import { FormatRupiah } from "@arismun/format-rupiah";
 import { Button } from "@/Components/ui/button";
+import { Inertia } from "@inertiajs/inertia";
 
 interface Props {
     games: Game;
 }
+
+const handleOrder = (price: number, productName: string) => {
+    // Kirim data harga dan nama produk ke halaman pembayaran
+    Inertia.post('/stripe', { price, productName });
+};
+
 const Welcome = ({ games }: Props) => {
     return (
         <GuestLayout head="dashboard">
@@ -57,7 +64,9 @@ const Welcome = ({ games }: Props) => {
                                     <p>
                                         <FormatRupiah value={topup.price} />
                                     </p>
-                                    <Button>Pesan Sekarang !</Button>
+                                    <Button onClick={() => handleOrder(topup.price, topup.product_name)}>
+                                        <a href="/stripe">Pesan Sekarang !</a>
+                                    </Button>
                                 </div>
                             </li>
                         ))}
@@ -79,7 +88,9 @@ const Welcome = ({ games }: Props) => {
                                     <p>
                                         <FormatRupiah value={topup.price} />
                                     </p>
-                                    <Button>Pre-Order !</Button>
+                                    <Button onClick={() => handleOrder(topup.price, topup.product_name)}>
+                                        <a href="/stripe">Pre-Order !</a>
+                                    </Button>
                                 </div>
                             </li>
                         ))}

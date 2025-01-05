@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@arismun/format-rupiah": "^3.0.0",
+        "@inertiajs/inertia": "^0.11.1",
         "@radix-ui/react-dialog": "^1.1.1",
         "@radix-ui/react-dropdown-menu": "^2.1.1",
         "@radix-ui/react-label": "^2.1.0",

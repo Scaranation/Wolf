@@ -5,12 +5,14 @@ use App\Http\Controllers\Admin\GameController as AdminGameController;
 use App\Http\Controllers\Admin\JockeyProductController;
 use App\Http\Controllers\Admin\TopupProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StripeController;
 use App\Http\Controllers\User\GameController;
 use App\Http\Controllers\User\ProfileController as UserProfileController;
 use App\Models\Game;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 Route::get('/', function () {
     $games = Game::all();
@@ -23,7 +25,13 @@ Route::get('/', function () {
     ]);
 })->name('welcome');
 
+Route::controller(StripeController::class)->group(function(){
+    Route::get('stripe', 'stripe');
+    Route::post('stripe', 'stripePost')->name('stripe.post');
+});
+
 Route::resource('game', GameController::class)->names('user.game');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
