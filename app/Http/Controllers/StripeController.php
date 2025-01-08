@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Stripe;
 use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
+use App\Models\Game;
+use App\Models\JockeyProduct;
+use App\Models\TopupProduct;
 
 class StripeController extends Controller
 {
@@ -14,9 +17,15 @@ class StripeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function stripe(): View
+    public function stripe(Request $request): View
     {
-        return view('stripe');
+        $games = Game::when($request->game_id, function ($query, $gameId) {
+            return $query->where('id', $gameId);
+        })->get();
+
+        $jockeyProducts = JockeyProduct::all();
+        $topupProducts = TopupProduct::all();
+        return view('stripe', compact('games', 'jockeyProducts', 'topupProducts'));
     }
 
     /**
@@ -28,7 +37,6 @@ class StripeController extends Controller
     {
         // Validasi input
         $request->validate([
-            'amount' => 'required|numeric|min:1',
             'stripeToken' => 'required',
         ]);
 
@@ -36,17 +44,17 @@ class StripeController extends Controller
         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
 
         try {
+            $amount = $request->amount * 100; // Menggunakan total yang dihitung di frontend dan mengonversinya ke sen
+
             // Membuat charge pembayaran
             Stripe\Charge::create([
-                'amount' => $request->amount * 100, // Konversi ke sen (IDR)
+                'amount' => $amount, // Jumlah total setelah produk tambahan
                 'currency' => 'idr',
                 'source' => $request->stripeToken,
                 'description' => 'Custom payment from user.',
             ]);
 
-            // return back()->with('success', 'Payment successful!');
             return redirect()->route('welcome')->with('success', 'Payment successful!');
-
         } catch (\Exception $e) {
             return back()->with('error', $e->getMessage());
         }

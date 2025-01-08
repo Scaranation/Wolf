@@ -22,11 +22,16 @@
 </head>
 <body onload="initMap()" class="bg-gray-100 min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-blue-600 text-white py-4 shadow-md">
-        <div class="container mx-auto px-4">
-            <h1 class="text-lg md:text-2xl font-semibold">Peta Lokasi</h1>
+    <nav class="">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex flex-col text-2xl font-bold">
+                <a href="{{ route('welcome') }}" class="flex items-center">
+                    <img src="./Logo/Logo.png" alt="logo" class="h-20 w-20 mr-2">
+                    <span class="text-2xl font-bold text-blue-600">ScaraPlay</span>
+                </a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-6 flex-grow">
