@@ -19,13 +19,11 @@ class StripeController extends Controller
      */
     public function stripe(Request $request): View
     {
-        $games = Game::when($request->game_id, function ($query, $gameId) {
-            return $query->where('id', $gameId);
-        })->get();
+        $productName = $request->query('product_name');
+        $details = $request->query('details');
+        $price = $request->query('price');
 
-        $jockeyProducts = JockeyProduct::all();
-        $topupProducts = TopupProduct::all();
-        return view('stripe', compact('games', 'jockeyProducts', 'topupProducts'));
+        return view('stripe', compact('productName', 'details', 'price'));
     }
 
     /**
@@ -35,6 +33,7 @@ class StripeController extends Controller
      */
     public function stripePost(Request $request): RedirectResponse
     {
+        
         // Validasi input
         $request->validate([
             'stripeToken' => 'required',
