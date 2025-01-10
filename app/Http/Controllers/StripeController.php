@@ -33,7 +33,6 @@ class StripeController extends Controller
      */
     public function stripePost(Request $request): RedirectResponse
     {
-        
         // Validasi input
         $request->validate([
             'stripeToken' => 'required',
@@ -50,7 +49,7 @@ class StripeController extends Controller
                 'amount' => $amount, // Jumlah total setelah produk tambahan
                 'currency' => 'idr',
                 'source' => $request->stripeToken,
-                'description' => 'Custom payment from user.',
+                'description' => sprintf('Payment Price: IDR %s.',  number_format($request->amount, 2)),
             ]);
 
             return redirect()->route('welcome')->with('success', 'Payment successful!');
